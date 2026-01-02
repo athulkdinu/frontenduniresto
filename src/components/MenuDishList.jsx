@@ -5,7 +5,7 @@ const MenuDishList = ({ dishes, categoryId }) => {
   if (!dishes || dishes.length === 0) {
     return (
       <div 
-        className="p-6 md:p-8 text-center"
+        className="p-6 md:p-8 text-center bg-white"
         role="status"
         aria-live="polite"
       >
@@ -16,7 +16,7 @@ const MenuDishList = ({ dishes, categoryId }) => {
 
   return (
     <section 
-      className="p-4 md:p-6 lg:p-8 space-y-4 md:space-y-5 max-w-6xl mx-auto"
+      className="bg-white"
       id={`category-${categoryId}-panel`}
       role="tabpanel"
       aria-labelledby={`category-${categoryId}-tab`}

@@ -56,7 +56,7 @@ const MenuPage = () => {
   if (isLoading) {
     return (
       <div 
-        className="min-h-screen bg-gray-50 flex items-center justify-center"
+        className="min-h-screen bg-white flex items-center justify-center"
         role="status"
         aria-live="polite"
       >
@@ -74,7 +74,7 @@ const MenuPage = () => {
   // Error state
   if (error) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-white">
         <AppHeader />
         <div className="flex items-center justify-center min-h-[60vh] p-6">
           <div className="text-center max-w-md">
@@ -97,7 +97,7 @@ const MenuPage = () => {
   // Empty state
   if (!menuCategories.length) {
     return (
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-white">
         <AppHeader />
         <div className="flex items-center justify-center min-h-[60vh]">
           <p className="text-gray-600 text-lg">No menu categories available.</p>
@@ -107,7 +107,7 @@ const MenuPage = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-white">
       <AppHeader />
       
       <MenuCategoryTabs

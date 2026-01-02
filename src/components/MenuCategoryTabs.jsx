@@ -36,7 +36,7 @@ const MenuCategoryTabs = ({ categories, activeCategoryIndex, onCategoryChange })
   return (
     <div 
       ref={containerRef}
-      className="bg-white border-b border-gray-200 overflow-x-auto hide-scrollbar sticky top-[73px] md:top-[81px] z-10"
+      className="bg-white border-b border-gray-200 overflow-x-auto hide-scrollbar sticky top-[68px] z-10"
       role="tablist"
       aria-label="Menu categories"
     >
@@ -55,8 +55,8 @@ const MenuCategoryTabs = ({ categories, activeCategoryIndex, onCategoryChange })
               aria-controls={`category-${category.menu_category_id}-panel`}
               id={`category-${category.menu_category_id}-tab`}
               className={`
-                pb-4 px-2 whitespace-nowrap font-semibold transition-all duration-200
-                relative focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 rounded-t
+                pb-3 px-2 whitespace-nowrap font-semibold text-sm md:text-base transition-all duration-200
+                relative focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2
                 ${isActive 
                   ? 'text-red-600' 
                   : 'text-gray-600 hover:text-gray-800'
@@ -66,7 +66,7 @@ const MenuCategoryTabs = ({ categories, activeCategoryIndex, onCategoryChange })
               {category.menu_category}
               {isActive && (
                 <span 
-                  className="absolute bottom-0 left-0 right-0 h-1 bg-red-600 rounded-t"
+                  className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600"
                   aria-hidden="true"
                 />
               )}

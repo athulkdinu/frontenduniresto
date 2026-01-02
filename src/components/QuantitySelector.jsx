@@ -20,7 +20,7 @@ const QuantitySelector = ({
 
   return (
     <div 
-      className="flex items-center gap-3 bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full w-fit shadow-md"
+      className="flex items-center gap-2 bg-green-600 text-white px-3 py-1.5 rounded w-fit"
       role="group"
       aria-label={ariaLabel}
     >
@@ -37,11 +37,11 @@ const QuantitySelector = ({
           }
         `}
       >
-        <FaMinus size={14} aria-hidden="true" />
+        <FaMinus size={12} aria-hidden="true" />
       </button>
       
       <span 
-        className="font-bold min-w-[24px] text-center text-lg"
+        className="font-semibold min-w-[20px] text-center text-sm"
         aria-live="polite"
         aria-atomic="true"
       >
@@ -61,7 +61,7 @@ const QuantitySelector = ({
           }
         `}
       >
-        <FaPlus size={14} aria-hidden="true" />
+        <FaPlus size={12} aria-hidden="true" />
       </button>
     </div>
   );
